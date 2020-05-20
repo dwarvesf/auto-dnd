@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Auto DND/Pods-Auto DND-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Preferences/Preferences.framework
+${PODS_ROOT}/Sparkle/Sparkle.framework
+${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM

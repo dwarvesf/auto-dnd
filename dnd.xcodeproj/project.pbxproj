@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084DE8F72447630C00B55268 /* dndHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE8F62447630C00B55268 /* dndHelperProtocol.swift */; };
+		084DE9032447722700B55268 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE9022447722700B55268 /* main.swift */; };
+		084DE90A2447782000B55268 /* dndHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE8F62447630C00B55268 /* dndHelperProtocol.swift */; };
+		084DE90F2447786700B55268 /* CallingChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE90E2447786700B55268 /* CallingChecker.swift */; };
+		084DE91424477CBD00B55268 /* foundation.dwarves.dnd.callingChecker in CopyFiles */ = {isa = PBXBuildFile; fileRef = 084DE9002447722600B55268 /* foundation.dwarves.dnd.callingChecker */; };
+		084DE921244ECF4500B55268 /* DNDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE920244ECF4500B55268 /* DNDManager.swift */; };
+		084DE923244ED2AB00B55268 /* CallingChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DE922244ED2AB00B55268 /* CallingChecker.swift */; };
+		085A91C124517D1E0071B904 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A91BB244F12DB0071B904 /* ServiceManagement.framework */; };
+		088BE7AE2475A65A00CBF97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7AD2475A65A00CBF97C /* AppDelegate.swift */; };
+		088BE7B02475A65D00CBF97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088BE7AF2475A65D00CBF97C /* Assets.xcassets */; };
+		088BE7B32475A65D00CBF97C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 088BE7B12475A65D00CBF97C /* MainMenu.xib */; };
+		088BE7BA2475A67A00CBF97C /* DNDLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 088BE7AB2475A65A00CBF97C /* DNDLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		088BE7BC2475A6AA00CBF97C /* LauncherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7BB2475A6AA00CBF97C /* LauncherManager.swift */; };
+		088BE7BD2475A6AA00CBF97C /* LauncherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7BB2475A6AA00CBF97C /* LauncherManager.swift */; };
+		088BE7C32475A7BD00CBF97C /* ArrowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7C02475A7BD00CBF97C /* ArrowControl.swift */; };
+		088BE7C52475A7BD00CBF97C /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7C12475A7BD00CBF97C /* PageControl.swift */; };
+		088BE7C72475A7BD00CBF97C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7C22475A7BD00CBF97C /* PageViewController.swift */; };
+		088BE7CA2475A7E800CBF97C /* HyperlinkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7C92475A7E800CBF97C /* HyperlinkTextField.swift */; };
+		088BE7CC2475A81500CBF97C /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7CB2475A81500CBF97C /* Preference.swift */; };
+		088BE7CE2475A96100CBF97C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7CD2475A96100CBF97C /* App.swift */; };
+		088BE7D32475A9C100CBF97C /* WelcomeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7D12475A9C100CBF97C /* WelcomeWindowController.swift */; };
+		088BE7D42475A9C100CBF97C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7D22475A9C100CBF97C /* WelcomeViewController.swift */; };
+		088BE7DD2475AB0200CBF97C /* Preferences+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7D62475AB0200CBF97C /* Preferences+Extension.swift */; };
+		088BE7DE2475AB0200CBF97C /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7D82475AB0200CBF97C /* GeneralPreferenceViewController.swift */; };
+		088BE7DF2475AB0200CBF97C /* GeneralPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 088BE7D92475AB0200CBF97C /* GeneralPreferenceViewController.xib */; };
+		088BE7E02475AB0200CBF97C /* AboutPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BE7DB2475AB0200CBF97C /* AboutPreferenceViewController.swift */; };
+		088BE7E12475AB0200CBF97C /* AboutPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 088BE7DC2475AB0200CBF97C /* AboutPreferenceViewController.xib */; };
+		08B8B9BB2446B6EF00549FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B8B9BA2446B6EF00549FEF /* AppDelegate.swift */; };
+		08B8B9BF2446B6F300549FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B8B9BE2446B6F300549FEF /* Assets.xcassets */; };
+		08B8B9C22446B6F300549FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B8B9C02446B6F300549FEF /* Main.storyboard */; };
+		A934BB5D1B851F0C346B6943 /* Pods_Auto_DND.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163D093E30CBAF3A57479670 /* Pods_Auto_DND.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		084DE8FA24476F1000B55268 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				084DE91424477CBD00B55268 /* foundation.dwarves.dnd.callingChecker in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084DE8FE2447722600B55268 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		088BE7B92475A67000CBF97C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				088BE7BA2475A67A00CBF97C /* DNDLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		084DE8F62447630C00B55268 /* dndHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dndHelperProtocol.swift; sourceTree = "<group>"; };
+		084DE9002447722600B55268 /* foundation.dwarves.dnd.callingChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = foundation.dwarves.dnd.callingChecker; sourceTree = BUILT_PRODUCTS_DIR; };
+		084DE9022447722700B55268 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		084DE90E2447786700B55268 /* CallingChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingChecker.swift; sourceTree = "<group>"; };
+		084DE91124477A6500B55268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084DE91224477A6500B55268 /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		084DE91324477AF800B55268 /* foundation.dwarves.dnd.callingChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = foundation.dwarves.dnd.callingChecker.entitlements; sourceTree = "<group>"; };
+		084DE920244ECF4500B55268 /* DNDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNDManager.swift; sourceTree = "<group>"; };
+		084DE922244ED2AB00B55268 /* CallingChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingChecker.swift; sourceTree = "<group>"; };
+		085A91BB244F12DB0071B904 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		088BE7AB2475A65A00CBF97C /* DNDLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNDLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		088BE7AD2475A65A00CBF97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		088BE7AF2475A65D00CBF97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		088BE7B22475A65D00CBF97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		088BE7B42475A65D00CBF97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088BE7B52475A65D00CBF97C /* DNDLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNDLauncher.entitlements; sourceTree = "<group>"; };
+		088BE7BB2475A6AA00CBF97C /* LauncherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherManager.swift; sourceTree = "<group>"; };
+		088BE7C02475A7BD00CBF97C /* ArrowControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowControl.swift; sourceTree = "<group>"; };
+		088BE7C12475A7BD00CBF97C /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		088BE7C22475A7BD00CBF97C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		088BE7C92475A7E800CBF97C /* HyperlinkTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkTextField.swift; sourceTree = "<group>"; };
+		088BE7CB2475A81500CBF97C /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		088BE7CD2475A96100CBF97C /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		088BE7D12475A9C100CBF97C /* WelcomeWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWindowController.swift; sourceTree = "<group>"; };
+		088BE7D22475A9C100CBF97C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		088BE7D62475AB0200CBF97C /* Preferences+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preferences+Extension.swift"; sourceTree = "<group>"; };
+		088BE7D82475AB0200CBF97C /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
+		088BE7D92475AB0200CBF97C /* GeneralPreferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralPreferenceViewController.xib; sourceTree = "<group>"; };
+		088BE7DB2475AB0200CBF97C /* AboutPreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPreferenceViewController.swift; sourceTree = "<group>"; };
+		088BE7DC2475AB0200CBF97C /* AboutPreferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutPreferenceViewController.xib; sourceTree = "<group>"; };
+		08B8B9B72446B6EF00549FEF /* Auto DND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto DND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B8B9BA2446B6EF00549FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08B8B9BE2446B6F300549FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08B8B9C12446B6F300549FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08B8B9C32446B6F300549FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B8B9C42446B6F300549FEF /* dnd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dnd.entitlements; sourceTree = "<group>"; };
+		163D093E30CBAF3A57479670 /* Pods_Auto_DND.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auto_DND.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C69B36F7612F44C0FE79563 /* Pods-Auto DND.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto DND.release.xcconfig"; path = "Target Support Files/Pods-Auto DND/Pods-Auto DND.release.xcconfig"; sourceTree = "<group>"; };
+		459FCEF6CD93C50E0A492403 /* Pods-Auto DND.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto DND.debug.xcconfig"; path = "Target Support Files/Pods-Auto DND/Pods-Auto DND.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		084DE8FD2447722600B55268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088BE7A82475A65A00CBF97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B8B9B42446B6EF00549FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085A91C124517D1E0071B904 /* ServiceManagement.framework in Frameworks */,
+				A934BB5D1B851F0C346B6943 /* Pods_Auto_DND.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084DE8F5244762DA00B55268 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				084DE8F62447630C00B55268 /* dndHelperProtocol.swift */,
+				088BE7BB2475A6AA00CBF97C /* LauncherManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		084DE9012447722700B55268 /* foundation.dwarves.dnd.callingChecker */ = {
+			isa = PBXGroup;
+			children = (
+				084DE91324477AF800B55268 /* foundation.dwarves.dnd.callingChecker.entitlements */,
+				084DE91124477A6500B55268 /* Info.plist */,
+				084DE91224477A6500B55268 /* Launchd.plist */,
+				084DE9022447722700B55268 /* main.swift */,
+				084DE90E2447786700B55268 /* CallingChecker.swift */,
+			);
+			path = foundation.dwarves.dnd.callingChecker;
+			sourceTree = "<group>";
+		};
+		085A91BA244F12DA0071B904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085A91BB244F12DB0071B904 /* ServiceManagement.framework */,
+				163D093E30CBAF3A57479670 /* Pods_Auto_DND.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		088BE7AC2475A65A00CBF97C /* DNDLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7AD2475A65A00CBF97C /* AppDelegate.swift */,
+				088BE7AF2475A65D00CBF97C /* Assets.xcassets */,
+				088BE7B12475A65D00CBF97C /* MainMenu.xib */,
+				088BE7B42475A65D00CBF97C /* Info.plist */,
+				088BE7B52475A65D00CBF97C /* DNDLauncher.entitlements */,
+			);
+			path = DNDLauncher;
+			sourceTree = "<group>";
+		};
+		088BE7BE2475A7AC00CBF97C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7CD2475A96100CBF97C /* App.swift */,
+				088BE7C92475A7E800CBF97C /* HyperlinkTextField.swift */,
+				088BE7BF2475A7BD00CBF97C /* FLOPageViewController */,
+				088BE7CB2475A81500CBF97C /* Preference.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		088BE7BF2475A7BD00CBF97C /* FLOPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7C02475A7BD00CBF97C /* ArrowControl.swift */,
+				088BE7C12475A7BD00CBF97C /* PageControl.swift */,
+				088BE7C22475A7BD00CBF97C /* PageViewController.swift */,
+			);
+			path = FLOPageViewController;
+			sourceTree = "<group>";
+		};
+		088BE7D02475A9C100CBF97C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7D12475A9C100CBF97C /* WelcomeWindowController.swift */,
+				088BE7D22475A9C100CBF97C /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		088BE7D52475AB0200CBF97C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7D62475AB0200CBF97C /* Preferences+Extension.swift */,
+				088BE7D72475AB0200CBF97C /* General */,
+				088BE7DA2475AB0200CBF97C /* About */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		088BE7D72475AB0200CBF97C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7D82475AB0200CBF97C /* GeneralPreferenceViewController.swift */,
+				088BE7D92475AB0200CBF97C /* GeneralPreferenceViewController.xib */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		088BE7DA2475AB0200CBF97C /* About */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7DB2475AB0200CBF97C /* AboutPreferenceViewController.swift */,
+				088BE7DC2475AB0200CBF97C /* AboutPreferenceViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		08B8B9AE2446B6EF00549FEF = {
+			isa = PBXGroup;
+			children = (
+				084DE8F5244762DA00B55268 /* Shared */,
+				08B8B9B92446B6EF00549FEF /* dnd */,
+				084DE9012447722700B55268 /* foundation.dwarves.dnd.callingChecker */,
+				088BE7AC2475A65A00CBF97C /* DNDLauncher */,
+				08B8B9B82446B6EF00549FEF /* Products */,
+				085A91BA244F12DA0071B904 /* Frameworks */,
+				19091856BFA48C91C24DE743 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		08B8B9B82446B6EF00549FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08B8B9B72446B6EF00549FEF /* Auto DND.app */,
+				084DE9002447722600B55268 /* foundation.dwarves.dnd.callingChecker */,
+				088BE7AB2475A65A00CBF97C /* DNDLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08B8B9B92446B6EF00549FEF /* dnd */ = {
+			isa = PBXGroup;
+			children = (
+				088BE7D52475AB0200CBF97C /* Preferences */,
+				088BE7D02475A9C100CBF97C /* Welcome */,
+				088BE7BE2475A7AC00CBF97C /* Helpers */,
+				08B8B9BA2446B6EF00549FEF /* AppDelegate.swift */,
+				08B8B9BE2446B6F300549FEF /* Assets.xcassets */,
+				08B8B9C02446B6F300549FEF /* Main.storyboard */,
+				08B8B9C32446B6F300549FEF /* Info.plist */,
+				08B8B9C42446B6F300549FEF /* dnd.entitlements */,
+				084DE920244ECF4500B55268 /* DNDManager.swift */,
+				084DE922244ED2AB00B55268 /* CallingChecker.swift */,
+			);
+			path = dnd;
+			sourceTree = "<group>";
+		};
+		19091856BFA48C91C24DE743 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				459FCEF6CD93C50E0A492403 /* Pods-Auto DND.debug.xcconfig */,
+				1C69B36F7612F44C0FE79563 /* Pods-Auto DND.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		084DE8FF2447722600B55268 /* foundation.dwarves.dnd.callingChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084DE9042447722700B55268 /* Build configuration list for PBXNativeTarget "foundation.dwarves.dnd.callingChecker" */;
+			buildPhases = (
+				084DE8FC2447722600B55268 /* Sources */,
+				084DE8FD2447722600B55268 /* Frameworks */,
+				084DE8FE2447722600B55268 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foundation.dwarves.dnd.callingChecker;
+			productName = callingChecker;
+			productReference = 084DE9002447722600B55268 /* foundation.dwarves.dnd.callingChecker */;
+			productType = "com.apple.product-type.tool";
+		};
+		088BE7AA2475A65A00CBF97C /* DNDLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088BE7B62475A65D00CBF97C /* Build configuration list for PBXNativeTarget "DNDLauncher" */;
+			buildPhases = (
+				088BE7A72475A65A00CBF97C /* Sources */,
+				088BE7A82475A65A00CBF97C /* Frameworks */,
+				088BE7A92475A65A00CBF97C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNDLauncher;
+			productName = DNDLauncher;
+			productReference = 088BE7AB2475A65A00CBF97C /* DNDLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08B8B9B62446B6EF00549FEF /* Auto DND */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08B8B9C72446B6F300549FEF /* Build configuration list for PBXNativeTarget "Auto DND" */;
+			buildPhases = (
+				9144CDA84AAE97ED6FA0AF3C /* [CP] Check Pods Manifest.lock */,
+				08B8B9B32446B6EF00549FEF /* Sources */,
+				08B8B9B42446B6EF00549FEF /* Frameworks */,
+				08B8B9B52446B6EF00549FEF /* Resources */,
+				084DE8FA24476F1000B55268 /* CopyFiles */,
+				088BE7B92475A67000CBF97C /* CopyFiles */,
+				681AED2B53C75B7C3AA5D456 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auto DND";
+			productName = dnd;
+			productReference = 08B8B9B72446B6EF00549FEF /* Auto DND.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08B8B9AF2446B6EF00549FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Dwarves Foundation";
+				TargetAttributes = {
+					084DE8FF2447722600B55268 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					088BE7AA2475A65A00CBF97C = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					08B8B9B62446B6EF00549FEF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 08B8B9B22446B6EF00549FEF /* Build configuration list for PBXProject "dnd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08B8B9AE2446B6EF00549FEF;
+			productRefGroup = 08B8B9B82446B6EF00549FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08B8B9B62446B6EF00549FEF /* Auto DND */,
+				084DE8FF2447722600B55268 /* foundation.dwarves.dnd.callingChecker */,
+				088BE7AA2475A65A00CBF97C /* DNDLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		088BE7A92475A65A00CBF97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BE7B02475A65D00CBF97C /* Assets.xcassets in Resources */,
+				088BE7B32475A65D00CBF97C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B8B9B52446B6EF00549FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B8B9BF2446B6F300549FEF /* Assets.xcassets in Resources */,
+				088BE7E12475AB0200CBF97C /* AboutPreferenceViewController.xib in Resources */,
+				08B8B9C22446B6F300549FEF /* Main.storyboard in Resources */,
+				088BE7DF2475AB0200CBF97C /* GeneralPreferenceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		681AED2B53C75B7C3AA5D456 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auto DND/Pods-Auto DND-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auto DND/Pods-Auto DND-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auto DND/Pods-Auto DND-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9144CDA84AAE97ED6FA0AF3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Auto DND-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084DE8FC2447722600B55268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DE90A2447782000B55268 /* dndHelperProtocol.swift in Sources */,
+				084DE9032447722700B55268 /* main.swift in Sources */,
+				084DE90F2447786700B55268 /* CallingChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		088BE7A72475A65A00CBF97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BE7BD2475A6AA00CBF97C /* LauncherManager.swift in Sources */,
+				088BE7AE2475A65A00CBF97C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B8B9B32446B6EF00549FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BE7CC2475A81500CBF97C /* Preference.swift in Sources */,
+				084DE921244ECF4500B55268 /* DNDManager.swift in Sources */,
+				088BE7DD2475AB0200CBF97C /* Preferences+Extension.swift in Sources */,
+				088BE7CE2475A96100CBF97C /* App.swift in Sources */,
+				088BE7C52475A7BD00CBF97C /* PageControl.swift in Sources */,
+				088BE7D32475A9C100CBF97C /* WelcomeWindowController.swift in Sources */,
+				088BE7C32475A7BD00CBF97C /* ArrowControl.swift in Sources */,
+				088BE7D42475A9C100CBF97C /* WelcomeViewController.swift in Sources */,
+				088BE7BC2475A6AA00CBF97C /* LauncherManager.swift in Sources */,
+				08B8B9BB2446B6EF00549FEF /* AppDelegate.swift in Sources */,
+				088BE7DE2475AB0200CBF97C /* GeneralPreferenceViewController.swift in Sources */,
+				088BE7CA2475A7E800CBF97C /* HyperlinkTextField.swift in Sources */,
+				084DE923244ED2AB00B55268 /* CallingChecker.swift in Sources */,
+				084DE8F72447630C00B55268 /* dndHelperProtocol.swift in Sources */,
+				088BE7C72475A7BD00CBF97C /* PageViewController.swift in Sources */,
+				088BE7E02475AB0200CBF97C /* AboutPreferenceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		088BE7B12475A65D00CBF97C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088BE7B22475A65D00CBF97C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		08B8B9C02446B6F300549FEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08B8B9C12446B6F300549FEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		084DE9052447722700B55268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = foundation.dwarves.dnd.callingChecker/foundation.dwarves.dnd.callingChecker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/foundation.dwarvesf.dnd.callingChecker/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					foundation.dwarves.dnd.callingChecker/Info.plist,
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					foundation.dwarves.dnd.callingChecker/Launchd.plist,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.dnd.callingChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		084DE9062447722700B55268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = foundation.dwarves.dnd.callingChecker/foundation.dwarves.dnd.callingChecker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/foundation.dwarvesf.dnd.callingChecker/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					foundation.dwarves.dnd.callingChecker/Info.plist,
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					foundation.dwarves.dnd.callingChecker/Launchd.plist,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.dnd.callingChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		088BE7B72475A65D00CBF97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNDLauncher/DNDLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DNDLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.DNDLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		088BE7B82475A65D00CBF97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNDLauncher/DNDLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DNDLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.DNDLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		08B8B9C52446B6F300549FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08B8B9C62446B6F300549FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		08B8B9C82446B6F300549FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459FCEF6CD93C50E0A492403 /* Pods-Auto DND.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = dnd/dnd.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = dnd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.dnd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		08B8B9C92446B6F300549FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C69B36F7612F44C0FE79563 /* Pods-Auto DND.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = dnd/dnd.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W777S7V8TN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = dnd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foundation.dwarves.dnd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		084DE9042447722700B55268 /* Build configuration list for PBXNativeTarget "foundation.dwarves.dnd.callingChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084DE9052447722700B55268 /* Debug */,
+				084DE9062447722700B55268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088BE7B62475A65D00CBF97C /* Build configuration list for PBXNativeTarget "DNDLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088BE7B72475A65D00CBF97C /* Debug */,
+				088BE7B82475A65D00CBF97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B8B9B22446B6EF00549FEF /* Build configuration list for PBXProject "dnd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B8B9C52446B6F300549FEF /* Debug */,
+				08B8B9C62446B6F300549FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B8B9C72446B6F300549FEF /* Build configuration list for PBXNativeTarget "Auto DND" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B8B9C82446B6F300549FEF /* Debug */,
+				08B8B9C92446B6F300549FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08B8B9AF2446B6EF00549FEF /* Project object */;
+}

@@ -1,0 +1,31 @@
+PODS:
+  - AppCenter (3.1.1):
+    - AppCenter/Analytics (= 3.1.1)
+    - AppCenter/Crashes (= 3.1.1)
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - Preferences (1.0.1)
+  - Sparkle (1.23.0)
+
+DEPENDENCIES:
+  - AppCenter
+  - Preferences
+  - Sparkle
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+    - Preferences
+    - Sparkle
+
+SPEC CHECKSUMS:
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  Preferences: a5afbe0ae3e6bd886328b1960f4998e65d58f2c4
+  Sparkle: 55b1a87ba69d56913375a281546b7c82dec95bb0
+
+PODFILE CHECKSUM: 70ae979fd710da25d525ea3d8b240ab1ce6b5d61
+
+COCOAPODS: 1.9.1

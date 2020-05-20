@@ -1,0 +1,6 @@
+framework module Pods_Auto_DND {
+  umbrella header "Pods-Auto DND-umbrella.h"
+
+  export *
+  module * { export * }
+}
