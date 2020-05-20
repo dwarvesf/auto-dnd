@@ -55,9 +55,11 @@ This project exists thanks to all the people who contribute. Thank you guys so m
 Please read [this](CONTRIBUTING.md) before you make a contribution.
 
 ## Requirements
+
 macOS version >= 10.12
 
 ## You may also like
+
 - [Hidden Bar](https://github.com/dwarvesf/hidden) - An ultra-light MacOS utility that helps hide menu bar icons
 - [Blurred](https://github.com/dwarvesf/blurred) - A macOS utility that helps reduce distraction by dimming your inactive noise
 - [Micro Sniff](https://github.com/dwarvesf/micro-sniff) - An ultra-light macOS utility that notify whenever your micro-device is being used

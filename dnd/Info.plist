@@ -19,11 +19,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Dwarves Foundation. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
@@ -37,13 +39,11 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>foundation.dwarves.dnd.callingChecker</key>
-		<string>anchor apple generic and identifier &quot;foundation.dwarves.dnd.callingChecker&quot; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = W777S7V8TN)</string>
+		<string>anchor apple generic and identifier "foundation.dwarves.dnd.callingChecker" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = W777S7V8TN)</string>
 	</dict>
-	<key>LSUIElement</key>
+	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
 	<string>https://api.appcenter.ms/v0.1/public/sparkle/apps/7863b81e-6e22-496a-b5a8-9924dd04502f</string>
-	<key>SUEnableAutomaticChecks</key>
-	<true/>
 </dict>
 </plist>
